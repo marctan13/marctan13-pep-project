@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
         SocialMediaController controller = new SocialMediaController();
         Javalin app = controller.startAPI();
-        app.start(8080);
+        //commented out app.start to avoid starting twice when running tests
+        // app.start(8080);
     }
 }
